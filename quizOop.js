@@ -39,8 +39,8 @@ class Animal {
 }
 
 class Rabbit extends Animal {
-  constructor(name, age) {
-    super(name, age, true)
+  constructor(name, age, isMammal) {
+    super(name, age, isMammal)
   }
 
   eat() {
@@ -49,8 +49,8 @@ class Rabbit extends Animal {
 }
 
 class Eagle extends Animal {
-  constructor(name, age) {
-    super(name, age, false)
+  constructor(name, age, isMammal) {
+    super(name, age, isMammal = false)
   }
 
   fly() {
@@ -64,7 +64,7 @@ class Eagle extends Animal {
 // console.log(eagle.fly());
 
 
-const myRabbit = new Rabbit("Labi", 2)
+const myRabbit = new Rabbit("Labi", 2, true)
 console.log(myRabbit);
 console.log(myRabbit.eat())
 
